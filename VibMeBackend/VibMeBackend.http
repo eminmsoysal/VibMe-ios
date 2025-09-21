@@ -1,0 +1,6 @@
+@VibMeBackend_HostAddress = http://localhost:5276
+
+GET {{VibMeBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
