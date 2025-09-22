@@ -54,7 +54,7 @@ namespace VibMeBackend.Controllers
                     Data = deviceDtos
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<List<DeviceDto>>
                 {
@@ -127,7 +127,7 @@ namespace VibMeBackend.Controllers
                     Data = deviceDto
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<DeviceDto>
                 {
@@ -183,7 +183,7 @@ namespace VibMeBackend.Controllers
                     Data = deviceDto
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<DeviceDto>
                 {
@@ -262,7 +262,7 @@ namespace VibMeBackend.Controllers
                     Data = deviceDto
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<DeviceDto>
                 {
@@ -299,7 +299,7 @@ namespace VibMeBackend.Controllers
                     Data = null
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<object>
                 {
@@ -337,7 +337,7 @@ namespace VibMeBackend.Controllers
                     Data = null
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<object>
                 {
@@ -375,7 +375,7 @@ namespace VibMeBackend.Controllers
                     Data = null
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<object>
                 {

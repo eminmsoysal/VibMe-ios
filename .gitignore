@@ -1,3 +1,4 @@
+
 # Build outputs
 VibMeBackend/bin/
 VibMeBackend/obj/
@@ -11,10 +12,20 @@ VibMeApp/node_modules/
 # OS files
 .DS_Store
 Thumbs.db
+=======
+
+# .NET build artifacts
+VibMeBackend/bin/
+VibMeBackend/obj/
+
+# Node.js dependencies
+VibMeApp/node_modules/
+node_modules/
 
 # Expo
 VibMeApp/.expo/
 VibMeApp/dist/
+
 
 # Logs
 *.log
@@ -23,3 +34,56 @@ npm-debug.log*
 # Temporary files
 tmp/
 temp/
+=======
+VibMeApp/web-build/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+# Build artifacts
+**/bin/
+**/obj/
+**/node_modules/
+**/.expo/
+**/dist/
+
+# OS generated files
+**/.DS_Store
+**/Thumbs.db
+
+# IDE files
+**/.vscode/
+**/.idea/
+*.swp
+*.swo
+
+# Temporary files
+**/tmp/
+**/*.tmp
+**/*.temp
+
+# Logs
+**/*.log
+**/logs/
+
+# Package manager
+**/package-lock.json
+**/yarn.lock
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+
