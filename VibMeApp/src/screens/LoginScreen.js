@@ -3,17 +3,16 @@ import {
   View,
   Text,
   TextInput,
-  TouchableOpacity,
   StyleSheet,
   Alert,
   SafeAreaView,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
-  ActivityIndicator,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useAuth } from '../context/AuthContext';
+import { PrimaryButton } from '../components';
 
 const LoginScreen = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -148,19 +147,13 @@ const LoginScreen = () => {
               </View>
             )}
 
-            <TouchableOpacity
-              style={[styles.submitButton, isLoading && styles.submitButtonDisabled]}
+            <PrimaryButton
+              title={isLogin ? 'Sign In' : 'Create Account'}
               onPress={handleSubmit}
               disabled={isLoading}
-            >
-              {isLoading ? (
-                <ActivityIndicator color="white" />
-              ) : (
-                <Text style={styles.submitButtonText}>
-                  {isLogin ? 'Sign In' : 'Create Account'}
-                </Text>
-              )}
-            </TouchableOpacity>
+              loading={isLoading}
+              style={{ marginTop: 10 }}
+            />
 
             <TouchableOpacity
               style={styles.toggleButton}

@@ -1,3 +1,4 @@
+
 # .NET build artifacts
 VibMeBackend/bin/
 VibMeBackend/obj/
@@ -23,3 +24,40 @@ VibMeApp/web-build/
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+# Build artifacts
+**/bin/
+**/obj/
+**/node_modules/
+**/.expo/
+**/dist/
+
+# OS generated files
+**/.DS_Store
+**/Thumbs.db
+
+# IDE files
+**/.vscode/
+**/.idea/
+*.swp
+*.swo
+
+# Temporary files
+**/tmp/
+**/*.tmp
+**/*.temp
+
+# Logs
+**/*.log
+**/logs/
+
+# Package manager
+**/package-lock.json
+**/yarn.lock
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
