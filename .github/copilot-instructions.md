@@ -27,6 +27,17 @@ Always reference these instructions first and fallback to search or bash command
 - For CI environments use: `env CI=1 npx expo start` (non-interactive mode)
 - Platform options: Press `i` for iOS Simulator, `a` for Android Emulator, or scan QR code with Expo Go
 
+### Network Restrictions and Workarounds
+- **DNS Blocks**: In some environments, `api.expo.dev` and `cdp.expo.dev` may be blocked by firewall
+- **Symptoms**: Expo commands may fail with connection errors or DNS resolution issues
+- **Expected Behavior**: Commands may appear to hang during npm package installation or dependency validation
+- **Workarounds**:
+  - Use `env CI=1 npx expo start` for offline/restricted environments
+  - Metro bundler will run in CI mode with networking disabled
+  - Commands may take longer due to npm package installation warnings
+  - Add blocked domains to allowlist in repository's Copilot coding agent settings if admin access available
+  - **Note**: Expo functionality is limited in offline mode but Metro bundler still works for development
+
 ### Configuration Requirements
 - Update API base URL in `VibMeApp/src/services/ApiService.js`: Change `http://localhost:5000/api` to actual backend URL
 - Update SignalR URL in `VibMeApp/src/services/SignalRService.js`: Change `http://localhost:5000/vibmehub` to actual backend URL
@@ -114,6 +125,8 @@ VibMeBackend/
 - If mobile app fails to connect, verify API URLs in service files match backend port
 - Build artifacts in bin/ and obj/ folders are excluded from git
 - React Native vector icons deprecation warning is expected and doesn't affect functionality
+- **Network Issues**: If Expo commands fail due to DNS blocks (`api.expo.dev`, `cdp.expo.dev`), use `env CI=1 npx expo start` for offline mode
+- **Firewall Restrictions**: Metro bundler will run in CI mode with networking disabled when external Expo services are blocked
 
 ### No Testing Infrastructure
 This project does not have unit tests or automated testing configured. Manual validation through API endpoints and app functionality is the primary testing method.
