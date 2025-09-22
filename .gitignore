@@ -1,4 +1,19 @@
 
+# Build outputs
+VibMeBackend/bin/
+VibMeBackend/obj/
+VibMeApp/node_modules/
+
+# IDE files
+.vs/
+.vscode/
+*.sln.DotSettings.user
+
+# OS files
+.DS_Store
+Thumbs.db
+=======
+
 # .NET build artifacts
 VibMeBackend/bin/
 VibMeBackend/obj/
@@ -10,6 +25,16 @@ node_modules/
 # Expo
 VibMeApp/.expo/
 VibMeApp/dist/
+
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/
+=======
 VibMeApp/web-build/
 
 # macOS
@@ -60,4 +85,5 @@ yarn-error.*
 **/.env.development.local
 **/.env.test.local
 **/.env.production.local
+
 
