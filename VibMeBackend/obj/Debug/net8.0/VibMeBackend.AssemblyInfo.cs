@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VibMeBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2dd233abbdcbadc054bc1648ef8943df308bb11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e2d181e2026d3526c3a7632b1cccc765a661113")]
 [assembly: System.Reflection.AssemblyProductAttribute("VibMeBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VibMeBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
