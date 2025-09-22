@@ -1,0 +1,25 @@
+# .NET build artifacts
+VibMeBackend/bin/
+VibMeBackend/obj/
+
+# Node.js dependencies
+VibMeApp/node_modules/
+node_modules/
+
+# Expo
+VibMeApp/.expo/
+VibMeApp/dist/
+VibMeApp/web-build/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
