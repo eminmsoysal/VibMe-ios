@@ -34,7 +34,7 @@ namespace VibMeBackend.Controllers
                     Data = readings
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<List<TemperatureReading>>
                 {
@@ -62,7 +62,7 @@ namespace VibMeBackend.Controllers
                     Data = latestReading
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<TemperatureReading?>
                 {
@@ -114,7 +114,7 @@ namespace VibMeBackend.Controllers
                         Data = reading
                     });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<TemperatureReading>
                 {
@@ -154,7 +154,7 @@ namespace VibMeBackend.Controllers
                     Data = alerts.Cast<object>().ToList()
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<List<object>>
                 {
@@ -218,7 +218,7 @@ namespace VibMeBackend.Controllers
                     Data = stats
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<object>
                 {
@@ -248,7 +248,7 @@ namespace VibMeBackend.Controllers
                     Data = null
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<object>
                 {

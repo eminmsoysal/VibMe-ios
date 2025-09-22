@@ -79,7 +79,7 @@ namespace VibMeBackend.Controllers
                     Data = userDto
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<UserDto>
                 {
@@ -142,7 +142,7 @@ namespace VibMeBackend.Controllers
                     Data = userDto
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<UserDto>
                 {
@@ -172,7 +172,7 @@ namespace VibMeBackend.Controllers
                     Data = null
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<object>
                 {
@@ -219,7 +219,7 @@ namespace VibMeBackend.Controllers
                     Data = userDto
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, new ApiResponse<UserDto>
                 {
