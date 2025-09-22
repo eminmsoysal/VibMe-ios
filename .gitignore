@@ -1,0 +1,25 @@
+# Build outputs
+VibMeBackend/bin/
+VibMeBackend/obj/
+VibMeApp/node_modules/
+
+# IDE files
+.vs/
+.vscode/
+*.sln.DotSettings.user
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Expo
+VibMeApp/.expo/
+VibMeApp/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/
