@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000/api'; // Change this to your backend URL
+const BASE_URL = 'http://localhost:5276/api'; // Change this to your backend URL
 
 class ApiService {
   static async request(endpoint, options = {}) {

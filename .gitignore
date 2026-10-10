@@ -86,4 +86,36 @@ yarn-error.*
 **/.env.test.local
 **/.env.production.local
 
-
+# Additional generated outputs from merged feature
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+yarn-debug.log*
+yarn-error.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+coverage/
+.nyc_output
+jspm_packages/
+.npm
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+*.tgz
+.yarn-integrity
+.cache
+.parcel-cache
+.next
+.nuxt
+public/static
+.vuepress/dist
+.serverless
+.fusebox/
+.dynamodb/

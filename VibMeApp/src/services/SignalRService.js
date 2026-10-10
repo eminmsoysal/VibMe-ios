@@ -14,7 +14,7 @@ class SignalRService {
       }
 
       this.connection = new signalR.HubConnectionBuilder()
-        .withUrl('http://localhost:5000/vibmehub') // Change this to your backend URL
+        .withUrl('http://localhost:5276/vibmehub') // Change this to your backend URL
         .withAutomaticReconnect()
         .build();
 
