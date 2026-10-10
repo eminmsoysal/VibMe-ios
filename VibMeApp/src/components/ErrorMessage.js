@@ -2,11 +2,11 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const ErrorMessage = ({ 
-  error, 
-  onRetry, 
+const ErrorMessage = ({
+  error,
+  onRetry,
   retryText = 'Try Again',
-  showIcon = true 
+  showIcon = true
 }) => {
   if (!error) return null;
 

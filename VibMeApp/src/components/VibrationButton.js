@@ -2,18 +2,18 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import * as Haptics from 'expo-haptics';
 
-const VibrationButton = ({ 
-  title, 
-  pattern = 'Pulse', 
-  onPress, 
-  isActive = false, 
+const VibrationButton = ({
+  title,
+  pattern = 'Pulse',
+  onPress,
+  isActive = false,
   disabled = false,
   style = {},
-  hapticFeedback = true 
+  hapticFeedback = true
 }) => {
   const handlePress = () => {
     if (disabled) return;
-    
+
     if (hapticFeedback) {
       // Provide haptic feedback based on pattern
       switch (pattern) {
@@ -30,7 +30,7 @@ const VibrationButton = ({
           Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
       }
     }
-    
+
     if (onPress) {
       onPress();
     }

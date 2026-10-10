@@ -2,11 +2,11 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const TemperatureIndicator = ({ 
-  temperature, 
-  showIcon = true, 
+const TemperatureIndicator = ({
+  temperature,
+  showIcon = true,
   size = 'medium',
-  showStatus = true 
+  showStatus = true
 }) => {
   const getTemperatureSeverity = (temp) => {
     if (temp < 35) {
@@ -26,10 +26,10 @@ const TemperatureIndicator = ({
   return (
     <View style={[styles.container, sizeStyles.container]}>
       {showIcon && (
-        <Icon 
-          name="thermometer" 
-          size={sizeStyles.iconSize} 
-          color={severity.color} 
+        <Icon
+          name="thermometer"
+          size={sizeStyles.iconSize}
+          color={severity.color}
           style={styles.icon}
         />
       )}
